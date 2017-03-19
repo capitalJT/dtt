@@ -1,0 +1,1 @@
+"use strict";var dttDuration="500",dttEasing="swing";$(".main-navigation a, .hero a").on("click",function(t){t.preventDefault(),$("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},dttDuration,dttEasing)}),$("#scroll-to-top").click(function(){$("html, body").animate({scrollTop:0},dttDuration,dttEasing)});

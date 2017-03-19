@@ -1,0 +1,48 @@
+$global-padding: 20px;
+$global-margin: 20px;
+
+// Colors
+$Pickled-Bluewood: #2C3E50;
+$Sunset-Orange: #FC4349;
+// $Iron: #D7DADB;
+$Viking: #6DBCDB;
+$White: #FFFFFF;
+
+
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+
+// Blue 3
+// $color-1: #304269;
+
+// AW Blue
+$color-1: #34495e;
+
+// Blue 2
+$color-2: #91BED4;
+
+// Blue 1
+$color-3: #D9E8F5;
+
+// White
+$color-4: #FFFFFF;
+
+// Orange
+// $color-5: #F26101;
+$color-5: #E74C3C;
+$color-5-alt: #c0392b;
+
+
+// $primary-color: $Pickled-Bluewood;
+$primary-color: $color-1;
+// $accent-color: $Sunset-Orange;
+$accent-color: $color-5;
+
+$body-font: 'Roboto', sans-serif;
+$header-font: 'Oswald', sans-serif;
+
+$global-border-radius: 4px;
+
+@mixin border-radius{
+  border-radius: $global-border-radius;
+}
