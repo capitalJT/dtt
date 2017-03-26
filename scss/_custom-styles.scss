@@ -44,7 +44,7 @@ a {
     height: 50px;
     line-height: 47px;
     font-family: $header-font;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: $primary-color;
 }
 .main-navigation{
@@ -76,31 +76,37 @@ a {
 .hero{
   text-align: center;
   // background-color: #ddd;
-  padding-top: $global-padding * 2.5; 
-  padding-bottom: $global-padding * 2.5;
+  padding-top: $global-padding * 3; 
+  padding-bottom: $global-padding * 3;
   // background-image: url("../images/mediacommons.jpg");
   // background-color: rgba(0,0,0,0.5);
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/mediacommons.jpg");
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/mediacommons.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/hero-bg-image.jpg");
   color: white;
   h1{
     width: 65%;
     text-align: center;
-    margin: 0 auto $global-margin / 1.5;
+    margin: 0 auto 25px;
     line-height: 1.1em
   }
   p{
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    // max-width: 75%;
+    // margin-left: auto;
+    // margin-right: auto;
     font-size: 20px;
     line-height: 1.4em;
   }
   
 }
 
+span.dtt {
+  font-size: 1.25em;
+  display: block;
+  margin-top: 10px;
+}
 .separator{
   display: block;
   height: 5px;

@@ -7066,25 +7066,25 @@ h6 {
   font-family: "Oswald", sans-serif; }
 
 a {
-  color: #34495e;
+  color: #222669;
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease; }
   a:focus, a:active {
-    color: #E74C3C; }
+    color: #76B2A1; }
   a:hover {
     text-decoration: none;
-    color: #E74C3C; }
+    color: #76B2A1; }
   a:focus {
     text-decoration: none;
     outline: none; }
 
 .button {
-  background-color: #E74C3C;
+  background-color: #76B2A1;
   border-radius: 4px;
   padding-left: 30px;
   padding-right: 30px; }
   .button:hover, .button:focus {
-    background-color: #c0392b; }
+    background-color: #51776c; }
 
 .header {
   padding-top: 10px;
@@ -7095,8 +7095,8 @@ a {
   height: 50px;
   line-height: 47px;
   font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
-  color: #34495e; }
+  font-size: 1.6em;
+  color: #222669; }
 
 .main-navigation {
   padding-top: 5px; }
@@ -7118,24 +7118,26 @@ a {
 
 .hero {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/mediacommons.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/hero-bg-image.jpg");
   color: white; }
   .hero h1 {
     width: 65%;
     text-align: center;
-    margin: 0 auto 13.3333333333px;
+    margin: 0 auto 25px;
     line-height: 1.1em; }
   .hero p {
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 20px;
     line-height: 1.4em; }
+
+span.dtt {
+  font-size: 1.25em;
+  display: block;
+  margin-top: 10px; }
 
 .separator {
   display: block;
@@ -7151,28 +7153,28 @@ a {
   padding-bottom: 40px; }
   .value h2 {
     margin: 0 auto 10px;
-    color: #E74C3C; }
+    color: #76B2A1; }
   .value h4 {
-    color: #34495e; }
+    color: #222669; }
   .value img {
     width: 250px;
     margin-bottom: 10px; }
   .value img path {
     fill: green !important; }
   .value .separator {
-    background-color: #34495e; }
+    background-color: #222669; }
 
 .contact {
-  background-color: #34495e;
+  background-color: #222669;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
   color: white; }
   .contact .phone-num {
-    color: #E74C3C;
+    color: #76B2A1;
     font-size: 2em; }
     .contact .phone-num:hover {
-      color: #c0392b; }
+      color: #51776c; }
     .contact .phone-num:before {
       font-family: FontAwesome;
       font-weight: normal;
