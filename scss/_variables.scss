@@ -2,50 +2,38 @@ $global-padding: 20px;
 $global-margin: 20px;
 
 // Colors
-$Pickled-Bluewood: #2C3E50;
-$Sunset-Orange: #FC4349;
-// $Iron: #D7DADB;
-$Viking: #6DBCDB;
-$White: #FFFFFF;
+$navy: #050055;
+$gold: #C9A533;
 
+$primary-color: $navy;
+$accent-color: $gold;
 
-$clouds: #ecf0f1;
-$silver: #bdc3c7;
+$accent-color-light: lighten($accent-color,15%);
+$accent-color-dark: darken($accent-color,15%);
 
-// Blue 3
-// $color-1: #304269;
-
-// AW Blue
-$color-1: #222669;
-
-// Blue 2
-$color-2: #91BED4;
-
-// Blue 1
-$color-3: #D9E8F5;
-
-// White
-$color-4: #FFFFFF;
-
-// Orange
-// $color-5: #F26101;
-// $color-5: #E74C3C;
-
-// AW chosen
-$color-5: #76B2A1;
-$color-5-alt: #51776c;
-
-
-// $primary-color: $Pickled-Bluewood;
-$primary-color: $color-1;
-// $accent-color: $Sunset-Orange;
-$accent-color: $color-5;
-
-$body-font: 'Roboto', sans-serif;
-$header-font: 'Oswald', sans-serif;
+// $color: #3cb878;
+// $light: lighten($color,15%);
+// $dark: darken($color,15%);
+// $lighter: lighten($color,30%);
+// $darker: darken($color,30%);
 
 $global-border-radius: 4px;
 
 @mixin border-radius{
   border-radius: $global-border-radius;
 }
+
+@font-face {
+    font-family: JosefinSans;
+    src: url(../fonts/JosefinSans/JosefinSans-Regular.ttf);
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+    font-weight:normal;
+}
+
+$body-font: 'OpenSans', sans-serif;
+$header-font: 'JosefinSans', sans-serif;

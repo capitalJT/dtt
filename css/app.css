@@ -7054,8 +7054,18 @@ a.thumbnail {
   overflow: visible;
   clip: auto; }
 
+@font-face {
+  font-family: JosefinSans;
+  src: url(../fonts/JosefinSans/JosefinSans-Regular.ttf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+  font-weight: normal; }
+
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "OpenSans", sans-serif; }
 
 h1,
 h2,
@@ -7063,28 +7073,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif; }
+  font-family: "JosefinSans", sans-serif;
+  font-weight: 700; }
+
+.pop {
+  background-color: pink;
+  border: red; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 a {
-  color: #222669;
+  color: #050055;
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease; }
   a:focus, a:active {
-    color: #76B2A1; }
+    color: #C9A533; }
   a:hover {
     text-decoration: none;
-    color: #76B2A1; }
+    color: #C9A533; }
   a:focus {
     text-decoration: none;
     outline: none; }
 
 .button {
-  background-color: #76B2A1;
+  background-color: #C9A533;
   border-radius: 4px;
   padding-left: 30px;
   padding-right: 30px; }
   .button:hover, .button:focus {
-    background-color: #51776c; }
+    background-color: #8c7324; }
 
 .header {
   padding-top: 10px;
@@ -7092,38 +7110,35 @@ a {
 
 .logo {
   display: block;
-  height: 50px;
-  line-height: 47px;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.6em;
-  color: #222669; }
+  height: 40px;
+  width: auto; }
 
-.main-navigation {
-  padding-top: 5px; }
-  .main-navigation ul {
-    margin-bottom: 0;
-    list-style-type: none;
-    margin-left: 0; }
-  .main-navigation a {
-    padding-left: 20px;
-    padding-right: 20px;
-    display: inline-block;
-    line-height: 40px;
-    height: 40px; }
-  @media print, screen and (min-width: 40em) {
-    .main-navigation {
-      text-align: right; }
-      .main-navigation li {
-        display: inline-block; } }
+.main-navigation ul {
+  margin-bottom: 0;
+  list-style-type: none;
+  margin-left: 0; }
+
+.main-navigation a {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  line-height: 40px;
+  height: 40px; }
+
+@media print, screen and (min-width: 40em) {
+  .main-navigation {
+    text-align: right; }
+    .main-navigation li {
+      display: inline-block; } }
 
 .hero {
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/hero-bg-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../images/hero-bg-image.jpg");
   color: white; }
   .hero h1 {
     width: 65%;
@@ -7133,6 +7148,12 @@ a {
   .hero p {
     font-size: 20px;
     line-height: 1.4em; }
+
+.slick-dots li button:before {
+  color: #C9A533; }
+
+.slick-dots li.slick-active button:before {
+  color: #C9A533; }
 
 span.dtt {
   font-size: 1.25em;
@@ -7145,7 +7166,7 @@ span.dtt {
   width: 30%;
   margin: 20px auto;
   border-radius: 4px;
-  background-color: #ecf0f1; }
+  background-color: #C9A533; }
 
 .value {
   text-align: center;
@@ -7153,28 +7174,28 @@ span.dtt {
   padding-bottom: 40px; }
   .value h2 {
     margin: 0 auto 10px;
-    color: #76B2A1; }
+    color: #C9A533; }
   .value h4 {
-    color: #222669; }
+    color: #050055; }
   .value img {
     width: 250px;
     margin-bottom: 10px; }
   .value img path {
     fill: green !important; }
   .value .separator {
-    background-color: #222669; }
+    background-color: #050055; }
 
 .contact {
-  background-color: #222669;
+  background-color: #050055;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
   color: white; }
   .contact .phone-num {
-    color: #76B2A1;
+    color: #C9A533;
     font-size: 2em; }
     .contact .phone-num:hover {
-      color: #51776c; }
+      color: #8c7324; }
     .contact .phone-num:before {
       font-family: FontAwesome;
       font-weight: normal;
@@ -7182,12 +7203,20 @@ span.dtt {
       display: inline-block;
       font-size: 0.85em;
       margin-right: 10px;
-      color: #ecf0f1;
+      color: #fff;
       text-decoration: inherit;
       content: "\f095"; }
+
+#about-us .icon {
+  max-width: 150px; }
 
 #my-form {
   margin-top: 10px; }
 
+.locations {
+  color: #C9A533; }
+
 .footer {
   padding-top: 20px; }
+
+/*# sourceMappingURL=app.css.map */

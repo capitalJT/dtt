@@ -1,3 +1,5 @@
+@import 'util-classes';
+
 a {
   color: $primary-color;
   text-decoration: none;
@@ -16,48 +18,31 @@ a {
 }
 
 .button{
-  background-color: $color-5;
+  background-color: $accent-color;
   @include border-radius;
   &:hover, &:focus,{
-    background-color: $color-5-alt;
+    background-color: $accent-color-dark;
   }
   padding-left: $global-padding * 1.5; 
   padding-right: $global-padding * 1.5; 
 }
 
 .header{
-  // background-color: #eee;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .logo{
-  
-  // img{
-    
-  //   display: inline-block;
-  //   height: 70px;
-  // }
-  
-    // background-color: pink;
-    // border: solid thin red;
-    display: block;
-    height: 50px;
-    line-height: 47px;
-    font-family: $header-font;
-    font-size: 1.6em;
-    color: $primary-color;
+  display: block;
+  height: 40px;
+  width: auto;
 }
 .main-navigation{
-  
-  padding-top: 5px;
   ul{
     margin-bottom: 0;
     list-style-type: none;
     margin-left: 0;
   }
-  // li{
-  //   display: inline-block;
-  // }
+
   a{
     padding-left: 20px;
     padding-right: 20px;
@@ -75,16 +60,12 @@ a {
 
 .hero{
   text-align: center;
-  // background-color: #ddd;
   padding-top: $global-padding * 3; 
-  padding-bottom: $global-padding * 3;
-  // background-image: url("../images/mediacommons.jpg");
-  // background-color: rgba(0,0,0,0.5);
+  padding-bottom: $global-padding * 2;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/mediacommons.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/hero-bg-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../images/hero-bg-image.jpg");
   color: white;
   h1{
     width: 65%;
@@ -93,15 +74,17 @@ a {
     line-height: 1.1em
   }
   p{
-    // max-width: 75%;
-    // margin-left: auto;
-    // margin-right: auto;
     font-size: 20px;
     line-height: 1.4em;
   }
-  
 }
 
+.slick-dots li button:before{
+  color: $accent-color;
+}
+.slick-dots li.slick-active button:before{
+  color: $accent-color;
+}
 span.dtt {
   font-size: 1.25em;
   display: block;
@@ -113,7 +96,7 @@ span.dtt {
   width: 30%;
   margin: 20px auto;
   @include border-radius;
-  background-color: $clouds;
+  background-color: $accent-color;
 }
 
 .value{
@@ -128,7 +111,6 @@ span.dtt {
     color: $primary-color;
   }
   img{
-    // border-radius: 100%;
     width: 250px;
     margin-bottom: $global-margin / 2;
   }
@@ -139,7 +121,6 @@ span.dtt {
     background-color: $primary-color;
   }
 }
-
 
 $diagonal-gradient-color-one: $primary-color;
 $diagonal-gradient-color-two: #2c3e50;
@@ -159,7 +140,7 @@ $diagonal-gradient-color-two: #2c3e50;
     color: $accent-color;
     font-size: 2em;
     &:hover{
-      color: $color-5-alt;
+      color: $accent-color-dark;
     }
     &:before {
       font-family: FontAwesome;
@@ -168,15 +149,23 @@ $diagonal-gradient-color-two: #2c3e50;
       display: inline-block;
       font-size: 0.85em;
       margin-right: 10px;
-      color: $clouds;
+      color: #fff;
       text-decoration: inherit;
       content: "\f095";
     }
   }
 }
 
+#about-us{
+  .icon{
+    max-width: 150px;
+  }
+}
 #my-form{
   margin-top: 10px;
+}
+.locations{
+  color: $accent-color;
 }
 .footer{
   padding-top: $global-padding;
